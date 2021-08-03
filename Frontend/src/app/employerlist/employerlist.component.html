@@ -1,0 +1,39 @@
+<div *matTabContent class="example-large-box mat-elevation-z4">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>
+                <h2>
+                    Employer Details
+                </h2>
+            </mat-card-title>
+        </mat-card-header>
+
+        <div class="example-large-box mat-elevation-z4">
+            <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+                <div class="row" *ngFor='let i of employerlist'>
+                    <br>
+                    <div class="col-md-10 col-sm-9">
+
+                        <h3>Name:{{i.name}}</h3>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <h4><span class="label label-default">Email: {{i.email}}</span></h4>
+
+                                <h4><span class="label label-default">Phone: {{i.phone}}</span></h4>
+                                <h4><span class="label label-default">Company name: {{i.company}}</span></h4>
+                                <h4><span class="label label-default">Company description: {{i.compdesc}}</span></h4>
+                                
+                            </div>
+
+
+
+
+                        </div>
+                        <br><br>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
